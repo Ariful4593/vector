@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    vector <int> v;
+    /*vector <int> v;
     vector <int> :: iterator i;
 
     for(int i = 1; i <= 5; i++){
@@ -15,4 +15,16 @@ int main()
         cout << *i << " ";
     }
     cout << endl;
+    */
+
+    vector <int> v;
+    vector <int> :: reverse_iterator ri;
+
+    for(int i = 1; i <= 5; i++){
+        v.push_back(i);
+    }
+    for(ri = v.rbegin(); ri != v.rend(); ri++){
+        cout << *ri << " ";
+    }
+
 }
